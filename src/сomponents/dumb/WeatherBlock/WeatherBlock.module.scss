@@ -1,0 +1,179 @@
+.block{
+  width: 20em;
+  height: 8em;
+  border-radius: 1em;
+  box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.75);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.day{
+  background: radial-gradient(circle at 18% 45%, white -50%, #857fff 90%);
+  .cloudFront {
+    width: 4em;
+    top: 4.8em;
+    left: 2.5em;
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 2em;
+      height: 2em;
+      border-radius: 100%;
+      background-color: inherit;
+      top: -40%;
+      left: 1.2em;
+    }
+  }
+  .cloudBack {
+    width: 4em;
+    top: 0.75em;
+    left: 0.5em;
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 2em;
+      height: 2em;
+      border-radius: 100%;
+      background-color: inherit;
+      top: -30%;
+      left: 0.8em;
+    }
+  }
+}
+
+.night{
+  background: radial-gradient(circle at 18% 45%, #bfbeff -50%, #383873 90%);
+  .cloud {
+    background-color: #d7d7d7;
+  }
+  .cloudFront {
+    width: 3em;
+    top: 4.5em;
+    left: 3em;
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 2em;
+      height: 2em;
+      border-radius: 100%;
+      background-color: inherit;
+      top: -30%;
+      left: 0.5em;
+    }
+  }
+  .cloudBack {
+    width: 3.5em;
+    top: 1.25em;
+    left: 1.75em;
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 2em;
+      height: 2em;
+      border-radius: 100%;
+      background-color: inherit;
+      top: -50%;
+      left: 1em;
+    }
+  }
+}
+
+.sun{
+  width: 5em;
+  height: 5em;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  border-radius: 100%;
+  background-color: #ffe800;
+  z-index: 10;
+  &:before{
+    content: '';
+    display: block;
+    width: 6em;
+    height: 6em;
+    position: absolute;
+    background-color: #ffe800;
+    opacity: 0.4;
+    border-radius: 100%;
+    left: -0.5em;
+    top: -0.5em;
+  }
+}
+
+.moon{
+  width: 5em;
+  height: 5em;
+  position: absolute;
+  top: 0;
+  left: -0.5em;
+  border-radius: 50%;
+  //background: hsl(0, 0%, 50%);
+  box-shadow: 1em 0.75em 0px 0px #fff;
+  z-index: 10;
+}
+
+.cloud{
+  height: 1.5em;
+  background-color: #f0f0f0;
+  border-radius: 1em;
+  position: absolute;
+  opacity: 0.9;
+}
+
+.cloudFront{
+  z-index: 11;
+  animation: move infinite 3s ease-in-out;
+}
+
+.cloudBack{
+  z-index: 9;
+  animation: move2 infinite 3s ease-in-out;
+}
+
+@keyframes move {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(20%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes move2 {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(10%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.text{
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 1.25em;
+  color: white;
+}
+
+.num{
+  font-weight: bold;
+  font-size: 2em;
+  font-family: Geneva, Arial, Helvetica, sans-serif;;
+}

@@ -1,5 +1,18 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.app_light{
+  background-color: #ebebeb;
+}
+.app_dark{
+  background-color: #414141;
 }
 
 .App-logo {
@@ -17,6 +30,13 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.clickTextLight{
+    color: black;
+}
+.clickTextDark{
+    color: white;
 }
 
 .App-link {

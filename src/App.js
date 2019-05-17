@@ -1,25 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {WeatherBlock} from "./сomponents/dumb/WeatherBlock/WeatherBlock";
+
+export const LIGHT='light';
+export const DARK='dark';
 
 class App extends Component {
+
+  state={
+    mode: LIGHT
+  };
+
+  componentDidMount(){
+    const hours = new Date().getHours();
+    const isDay = (hours > 6) && (hours < 21);
+    this.setState({
+      mode: isDay ? LIGHT : DARK
+    })
+  }
+
+  changeMode = () => this.setState(prevState => ({mode: prevState.mode === LIGHT ? DARK : LIGHT}));
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
+      <div className={`App ${this.state.mode === LIGHT ? 'app_light' : 'app_dark'}`}>
+        <div onClick={this.changeMode}>
+          <p className={`${this.state.mode === LIGHT ? 'clickTextLight' : 'clickTextDark'}`}>
+            Click to change theme:
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+          <WeatherBlock city={'Санкт-Петербург'} mode={this.state.mode}/>
+        </div>
       </div>
     );
   }
