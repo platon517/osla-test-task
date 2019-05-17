@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98049c9d-8cf4-47ef-803d-161d5381011b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,7 +50,7 @@
         <counts>
           <entry key="css" value="144" />
           <entry key="js" value="600" />
-          <entry key="json" value="12" />
+          <entry key="json" value="14" />
           <entry key="jsx" value="802" />
           <entry key="scss" value="967" />
         </counts>
@@ -57,7 +58,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="144" />
-          <entry key="JSON" value="12" />
+          <entry key="JSON" value="14" />
           <entry key="JSX Harmony" value="802" />
           <entry key="JavaScript" value="600" />
           <entry key="SCSS" value="967" />
@@ -94,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="210">
+              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -287,12 +288,12 @@
       <workItem from="1552983476790" duration="11501000" />
       <workItem from="1555313506795" duration="96000" />
       <workItem from="1555571931315" duration="282000" />
-      <workItem from="1556535617379" duration="3210000" />
+      <workItem from="1556535617379" duration="3497000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15089000" />
+    <option name="totallyTimeSpent" value="15376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -377,8 +378,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="210">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
         </state>
       </provider>
     </entry>
