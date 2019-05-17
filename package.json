@@ -2,6 +2,7 @@
   "name": "osla-test",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://platon517.github.io/osla-test-task",
   "dependencies": {
     "node-sass": "^4.11.0",
     "react": "^16.8.4",
